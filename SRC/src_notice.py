@@ -7,14 +7,14 @@ from bs4 import BeautifulSoup
 
 def notice(name, title, notice_time):
     requests.get(
-        "https://bot.wgpsec.org/push/xxx?txt=%s %s 有新公告：%s" % (notice_time, name, title))
+        "https://bot.wgpsec.org/push/40bba192738e928c401a3490188fea21?txt=%s %s 有新公告：%s" % (notice_time, name, title))
 
 
 def print_color(name, notice_time, title):
     grep_list = ['活动', '周岁', '周年', '双倍', '三倍', '端午', '七夕', '双11安全保卫战']
     num = 1
     for i in grep_list:
-        if (i in title) and (num == 1) and ('2020' in notice_time or notice_time == '' or '20-' in notice_time) and (
+        if (i in title) and (num == 1) and ('2022' in notice_time or notice_time == '' or '22-' in notice_time) and (
                 '公示' not in title and '公告' not in title):
             print('\033[0;33m| \033[0m\033[0;31m%s\t%s\033[0m' % (notice_time, title))
             num = num + 1

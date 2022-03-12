@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 def notice(name, title, notice_time):
     requests.get(
-        "https://bot.wgpsec.org/push/40bba192738e928c401a3490188fea21?txt=%s %s 有新公告：%s" % (notice_time, name, title))
+        "https://bot.wgpsec.org/push/XXX?txt=%s %s 有新公告：%s" % (notice_time, name, title))
 
 
 def print_color(name, notice_time, title):

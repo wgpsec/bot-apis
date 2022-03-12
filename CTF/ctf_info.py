@@ -3,7 +3,7 @@ import json
 import time
 
 url = "https://api.ctfhub.com/User_API/Event/"
-bot_token = "40bba192738e928c401a3490188fea21  "
+bot_token = "XXXXXX"
 
 
 def get_info(actions, data):
